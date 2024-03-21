@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/166/384/png-transparent-cloud-sun-sunny-weather-weather-flat-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="heading">
+    <div class="right">
+<h1>Weather App</h1>
+    </div>
+    <div class="left">
+
+        <div class="search">
+            <input type="text" placeholder="Enter City name" spellcheck="false" class="input">
+            <button class="btn" onclick="checkWeather()"><i class="ri-search-line"></i></button>
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <div class="weather">
+            <h1 class="temp"></h1>
+            <h1 class="city"></h1>
+            <p class="feel-temp"></p>
+            <div class="details">
+                <div class="col">
+                    <div>
+                        <i class="ri-water-percent-line"></i>
+                    <p class="humidity-value"></p>
+                    <p class="humidity">Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <i class="ri-windy-line"></i>
+                    <p class="wind-value"></p>
+                    <p class="wind">wind</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
