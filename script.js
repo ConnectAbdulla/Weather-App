@@ -7,8 +7,12 @@ let button = document.querySelector(".btn");
 let card = document.querySelector(".card");
 let input = document.querySelector(".input");
 let city = document.querySelector(".city")
-let feeltemp = document.querySelector(".feel-temp")
-
+let feeltemp = document.querySelector(".feel-temp");
+input.defaultValue = "London";
+// input.innerHTML = "London";
+// input.addEventListener("click", function(){
+//     input.innerHTML = "";
+// })
 async function checkWeather(){
     let cityName = input.value;
     const res = await fetch(APIurl + cityName + `&appid=${APIkey}`);
