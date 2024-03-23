@@ -13,8 +13,8 @@ async function checkWeather(){
     let cityName = input.value;
     const res = await fetch(APIurl + cityName + `&appid=${APIkey}`);
     var data = await res.json();
-    console.log(data)
-    console.log(data['cod'])
+    // console.log(data)
+    // console.log(data['cod'])
     if (data.cod == 404){
         console.error("error")
         city.innerHTML = "Invalid Information";
@@ -39,7 +39,7 @@ async function checkWeather(){
 // })
 button.addEventListener("click", function(){
     if(input.value == ""){
-        console.error("error")
+         console.error("error")
        card.style.display = "none"
     }
 })
